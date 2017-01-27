@@ -1,0 +1,35 @@
+group 'gmail-api-test'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext {
+        springBootVersion = '1.4.1.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'spring-boot'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-actuator')
+    compile('org.projectlombok:lombok')
+    compile('com.squareup.okhttp3:okhttp:3.5.0')
+    compile('com.google.guava:guava:19.0')
+    compile('com.fasterxml.jackson.core:jackson-databind:2.8.5')
+//    compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+//   compile('org.springframework.boot:spring-boot-starter-web')
+}
