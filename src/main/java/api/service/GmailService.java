@@ -19,9 +19,9 @@ import java.util.stream.Collectors;
 @Service
 public class GmailService {
 
-    private static final String CLIENT_ID = "870997699573-fhcdgir4d7dkam3qfsnd6u3p88dtun23.apps.googleusercontent.com";
-    private static final String CLIENT_SECRET = "NiuMpnihI-6JbASKy6jxnPGf";
-    private static final String REFRESH_TOKEN = "1/fJX1t9ajUutmGQn6zDEHW4N9EZ09rkoJEd_hqmh2tT4";
+    private static final String CLIENT_ID = "CLIENT_ID";
+    private static final String CLIENT_SECRET = "CLIENT_SECRET";
+    private static final String REFRESH_TOKEN = "REFRESH_TOKEN";
 
     private static final String TOKEN_URL = "https://accounts.google.com/o/oauth2/token";
     private static final String MESSAGES_URL = "https://www.googleapis.com/gmail/v1/users/me/messages/";
